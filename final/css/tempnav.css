@@ -1,0 +1,560 @@
+.mydata{
+    color: #6b6d70;
+    font-size: 16px;
+
+}
+a>h1 {
+    color: rgba(22,21,22,255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(22,21,22,255);
+    text-decoration: none;
+}
+
+
+.imgset{
+margin-top: -210px;    
+}
+.featureheading{
+    color: #fff;
+    margin-top: 30px;
+}
+.featureheading>span{
+    border-top: 2px solid red;
+    border-radius: 20%;
+    padding-top: 10px;
+}
+
+
+.greyimage{
+    background-color:rgba(22,21,22,255);;
+    margin-top: -27px;
+    height: 200px;
+    position: relative;
+}
+
+.greycontent{
+    background-color: rgba(22,21,22,255);
+    width: 100%;
+
+}
+
+
+
+/* downsearch css */
+
+a.downsearch{
+    background-color:rgba(22,21,22,255);
+    border:rgba(22,21,22,255);
+    ;
+    color: red;
+}
+
+
+@media screen and (min-width:1092px) and (max-width:1212px){
+    .downsearch{
+        margin-top:23px;
+        padding-left: 18rem;
+    }
+}
+@media screen and (min-width:1212px) and (max-width:1480px){
+    .downsearch{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 23px;       
+    }
+}
+@media (max-width:1092px){
+    .downsearch{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:1560px) and (min-width:768px) {
+
+    li.downsearch>a{
+        display: none;
+    }
+
+
+}
+
+/* finished downsearch*/
+
+
+
+
+/* togglename css */
+
+.togglename{
+    color: #fff;
+    font-family: 'Orbitron',sans-serif;
+    margin-top: 3px;
+    font-weight: 200;
+    
+}
+
+
+@media screen and (min-width:500px) and (max-width:767px){
+    .togglename{
+        padding-left: 70px;
+    }
+}
+@media(max-width:500px){
+    .togglename{
+        padding-left: 50px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .togglename{
+        margin-left: 70px;
+    }
+}
+
+
+/* finished togglename css */
+
+
+
+
+
+/* uppersearch css */
+
+@media(max-width:1092px){
+    .uppersearch{
+        
+        margin-top: -46px;
+        margin-right: 10px;   
+    }
+}    
+    @media(min-width:1092.1px){
+        .togglename{
+            display: none;
+            
+        }
+        .uppersearch{
+            display: none;
+        }
+    }
+    
+/* finished uppersearch css */
+
+
+
+
+/* sidemenu open */
+@media(max-width:1092px){
+    
+    .sideMenu.open{
+        border-top: 2px solid #2a2b2e;
+        border-right: 2px solid #4c5057;
+    }
+
+    .navbar-default .navbar-nav>.active>a>span,
+    .navbar-default .navbar-nav>.active>a>span:focus,
+    .navbar-default .navbar-nav>.active>a>span:hover {
+        /* background-color: transparent; */
+        /* border-bottom: solid 4px rgb(0, 174, 255); */
+        border-bottom: 3px solid red;   
+    }
+}
+
+/* finished sidemenu open */
+
+
+
+
+
+/* for hide signup and signin on medium screen */
+
+@media(min-width:1092px){
+    li.hideit>a{
+display: none;
+
+    }
+}
+
+/* finished */
+
+
+
+
+
+/* ad css */
+@media screen and (min-width:768px) and (max-width:1092px) {
+    .ad2{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (max-width:768px){
+    .ad1{
+        display:none;
+    }
+    .ad2{
+        display: none;
+    }
+}
+/* finished ad css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px){
+.logobox{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+a.mysignin{
+    float: right;
+    padding-top: 10px;
+}
+}
+
+a.mysignin{
+    float: right;
+    padding-top: 5px;
+}
+
+
+
+
+@media (max-width: 1092px){
+  
+
+.logobox{
+display: none;
+}
+
+.navbar {
+    bottom: 0;
+    list-style: none;
+    height: 60px; /* Put your desired height here*/
+    line-height: 2.4;
+}
+.icon-bar{
+    margin-top: 8px;
+    
+}
+.greycontent{
+    border-top: 1px solid #4c5057;
+}
+
+}
+
+
+.dropdown-menu>li>a {
+    font-size: 16px;
+    font-weight: 600;
+    
+    }
+
+    .nav.navbar-nav li a:hover{
+        color: #fff;
+        
+    }
+
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+        background-color: transparent;
+        color: #fff;
+    }    
+
+    h5 {
+        font-size: 19px;
+        color: rgb(29, 148, 245);
+;
+    }
+
+
+
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+/* Changable for all */
+
+
+/* this is for active link 's color change like home */
+.navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover {
+        /* color: orangered; */
+        background-color: transparent;
+        color:#fff;
+
+
+    }
+
+    /* this is for designing at the bottom of active class like home */
+    .navbar-default .navbar-nav>.active>a>span,
+    .navbar-default .navbar-nav>.active>a>span:focus,
+    .navbar-default .navbar-nav>.active>a>span:hover {
+        /* background-color: transparent; */
+        /* border-bottom: solid 4px rgb(0, 174, 255); */
+        border-bottom: 3px solid red; 
+        padding-bottom: 5px;
+        
+    }
+
+h2{
+color: rgb(25, 176, 247);
+}
+
+h2 span {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 8px 0;
+        border-bottom: 2px solid #ff8400;
+        font-family: "Fjalla One",sans-serif;
+    }
+
+
+    /*  new css for navbar 's height' */
+    .navbar {
+        min-height: 10px;
+    }
+
+    .navbar-brand {
+        padding: 0 10px;
+        height: 10px;
+        line-height: 10px;
+    }
+
+    .navbar-toggle {
+        /* (80px - button height 34px) / 2 = 23px */
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 10px 10px !important;
+        border: transparent;
+
+    }
+
+    @media (min-width: 768px) {
+        .navbar-nav>li>a {
+            /* (80px - line-height of 27px) / 2 = 26.5px */
+            padding-top: 5px;
+            padding-bottom: 7px;
+            line-height: 3;
+            font-size: 20px;
+            
+
+        }
+    }
+
+
+    .navbar-nav>li {
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        font-size: 17.3px;
+        
+    }
+
+    /* finish */
+    /* after hover collapse bar css */
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: rgba(249, 249, 249, 0.99);
+    
+    }
+    /* finish */
+/* for menus 's font colors */
+.nav.navbar-nav li a {
+color: #ababad;
+
+    }
+/*FINISH::: for menus 's font colors */
+
+
+
+
+/* fonts sizes */
+
+.navbar-default {
+    font-weight: 800;    
+        font-family: 'Lato', sans-serif;
+        border-radius: 0%;
+        /* background-color: rgba(22,21,22,255); */
+        /* background-color: #3A3B3C; */
+        background-color: rgba(22,21,22,255);
+ 
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid #2a2b2e;
+        border-left: 5px solid rgba(22,21,22,255);
+;
+        border-right: 5px solid rgba(22,21,22,255);
+
+    }
+
+    .font-language {
+        font-size: 19.5px;
+        font-family: "Lato", sans-serif;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: "Fjalla One", sans-serif;
+
+    }
+
+    h3 {
+        font-size: 24px;
+        color: rgb(25, 176, 247);
+
+    }
+
+    h4 {
+        font-size: 22px;
+        color: #000;
+    }
+
+
+/* FINISH fonts sizes  */
+
+
+/* ipad solution */
+
+/* ipad solution */
+@media (max-width: 1092px) {
+.navbar-header {
+    float: none;
+}
+.navbar-left,.navbar-right {
+    float: none !important;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* .collapse.in{
+    display:block !important;
+} */
+
+
+}
+
+
+/* FINISH  ipad solutuon*/
+
+
+
+
+/* FINISH Changable for all */
+
+
+@media (max-width: 1092px){
+.navbar-default {
+    
+    background-color: rgba(22,21,22,255);
+        border-bottom: #101010;
+
+    
+    }
+    .nav.navbar-nav li a {
+color: #9d9d9d;
+font-weight: 600;
+
+
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover {
+        /* color: orangered; */
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color:#222;
+        
+    
+    }
+
+    .navbar-collapse {
+        border-top: #101010;
+}
+
+
+
+.nav.navbar-nav li a:hover {
+color: #fff;
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+color: #fff;
+background-color: #222;
+
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu>ul{
+background-color: #222;
+
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+color: rgb(0, 174, 255);
+}
+
+}
+
+.mylogo{
+font-family: 'Orbitron',sans-serif;
+font-size: 30px;
+}

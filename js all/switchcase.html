@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(-45deg, blue, pink);
+        background-size: 1369px 710px;
+
+    }
+    select{
+        background-image: linear-gradient(-45deg,rgb(235, 64, 64),rgb(243, 171, 62));
+        height: 23px;
+        width: 200px;
+        box-shadow: 0 0 15px white;
+        border: transparent;
+        border-radius: 30px;
+        font-size: 17px;
+        word-spacing: 6px;
+        padding-left: 10px;
+
+        
+    }
+    button{
+        text-shadow: 0 0 10px white;
+        height: 25px;
+        width: 90px;
+        border: transparent;
+        font-weight: bolder;
+        border-radius: 30px;
+        background-image: linear-gradient(45deg,rgb(60, 247, 60),rgb(53, 53, 247));
+        box-shadow: 0 0 20px white;
+    }
+    option{
+        background-color: rgb(252, 165, 71);
+    }
+
+
+
+</style>
+
+<body>
+    <br><br><br><br>
+    <div align="center">
+        <select id="selectany" >
+            <option id="real" disabled selected  > SELECT COURSE </option>
+
+            <option value="BCA" > BCA </option>
+
+            <option value="B.TECH"> B.TECH </option>
+
+            <option value="PHARMACY">PHARMACY </option>
+
+            <option value="MBBS">MBBS </option>
+
+            <option value="BBA"> BBA </option>
+
+            <option value="B.E."> B.E. </option>
+
+            <option value="B.COM"> B.COM </option>
+
+            <option value="BSC"> BSC </option>
+
+
+
+        </select><br><br><br>
+        <button type="button" onclick="myFunction()">
+            SUBMIT
+        </button>
+    </div>
+    <script>
+        function myFunction() {
+            var a = document.getElementById("selectany").value;
+            switch (a) {
+                case "BCA":
+                    alert(" Hello BCA Student");
+                    break;
+                case "B.TECH":
+                    alert(" Hello B.TECH Student");
+                    break;
+                case "PHARMACY":
+                    alert(" Hello PHARMACY Student");
+                    break;
+                case "MBBS":
+                    alert(" Hello MBBS Student");
+                    break;
+                case "BBA":
+                    alert(" Hello BBA Student");
+                    break;
+                case "B.E.":
+                    alert(" Hello B.E. Student");
+                case "B.COM":
+                    alert(" Hello B.COM Student");
+                    break;
+                case "BSC":
+                    alert(" Hello BSC Student");
+                    break;
+                    break;
+                default:
+                    alert("NOT RIGHT")
+                    break;
+            }
+
+            alert("You can join the seminar")
+        }
+    </script>
+</body>
+
+</html>

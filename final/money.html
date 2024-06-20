@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
+    <link rel="stylesheet" href="css/tempnav.css">
+    <link rel="stylesheet" href="css/dreamblogger.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/tempsearch.css">
+    <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
+
+    <!-- navbarslider css -->
+    <link rel="stylesheet" href="css/sidebarNavigation.css">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/sidebarNavigation.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
+        @media (min-width:1092px) {
+            #imgheading {
+                padding-right: 210px;
+                padding-left: 210px;
+            }
+        }
+
+        @media(max-width:768px) {
+            #imgheading {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width:768px) {
+            .viewall {
+                padding-right: 6.1%;
+
+            }
+        }
+
+        @media (min-width:991px) {
+            .viewall {
+                padding-right: 29.8%;
+
+            }
+        }
+
+        .scrolldiv {
+            display: grid;
+            grid-template-columns: repeat(3, [col] 1fr);
+            gap: 1rem;
+            overflow: auto;
+            white-space: nowrap;
+            grid-auto-flow: column;
+        }
+
+        
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+
+    <div class="font-language">
+
+
+        <div class="logobox container">
+            <span class="mylogo">
+                dream blogger
+            </span>
+
+            <a class="mysignin" href="login.html">
+                Login</a>
+
+        </div>
+
+
+
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+
+                    </button>
+
+
+
+                    <div class="togglename">dream blogger</div>
+
+
+                    <div class="uppersearch pull-right">
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+
+                            <li>
+                                <form action="post">
+
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
+
+                            <li id="firstmenu"><a href="index.html">Home</a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li><a href="gaming.html" target="_blank">Gaming</a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li class="active"><a href="money.html" target="_blank"><span>Money</span></a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
+
+
+                            <li class="hideit"><a href="signup.html" target="_blank"> <i class="fa fa-user"></i>
+                                SignUp</a></li>
+                        <li class="hideit"><a href="login.html" target="_blank"><i class="fa fa-sign-in"></i>
+                                SignIn</a></li>
+
+<div class="myicons pull-right">
+    <li style="position: absolute;"><a href="https://www.facebook.com/" style="color:#fff"><i id="face" class="fa fa-facebook"></i></a></li>
+    <li style="position: absolute;"><a href="https://www.instagram.com/" style="color: #fff;"> <i id="insta" class="fa fa-instagram"></i></a></li>
+    <li style="position: absolute;"> <a href="https://twitter.com/" style="color: #fff;"><i id="twitt" class="fa fa-twitter"></i> </a> </li>
+</div>    
+
+
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+                                <li></li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+
+
+                <br>
+
+        <div class="container">
+            <center>
+                <img src="images/Twocents.png" class="img-responsive" width="240px" style="margin-bottom:10px">
+            </center>
+
+            <p class="text-center" id="imgheading">Two Cents demystifies personal finance and teaches you how to budget
+                on your own terms, which investments are right for you, and how to achieve financial independence and a
+                comfortable retirement.</p>
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 15px;"></div>
+
+
+
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/m1.jpg" style="margin-top: 40px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">TAXES</a> <br> <a href="#"
+                                style="color: #000;font-weight:800;font-size: 19px;">How to Avoid Paying a Penalty If
+                                You Filed Your Taxes Late</a> </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/m2.jpg" style="margin-top: 40px;height: 201px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;"></a> <br> <a href="#"
+                                style="color: #000;font-weight:800;font-size: 19px;"> Is Student Loan Forgiveness Dead?
+                            </a> </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/m3.jpg" style="margin-top: 40px;height: 201px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;"></a> <br> <a href="#"
+                                style="color: #000;font-weight:800;font-size: 19px;"> How Much Interest You Actually
+                                Pay,Based on Your Credit Score </a> </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+            <div class="col-md-9">
+
+                <select name="All Sections"
+                    style="font-size: 15px;width: 100%;height: 37px;outline: 0;border:1px solid #dedede;border-radius: 4px;">
+                    <option>
+                        All Sections
+                    </option>
+
+
+                    <option>
+                        Banking
+                    </option>
+
+                    <option>
+                        Budgeting
+                    </option>
+
+                    <option>
+                        Credit Cards
+                    </option>
+
+                    <option>
+                        Debt
+                    </option>
+
+                    <option>
+                        Housing
+                    </option>
+
+                    <option>
+                        Insurance
+                    </option>
+
+                    <option>
+                        Investing
+                    </option>
+
+                    <option>
+                        Recalls
+                    </option>
+
+                    <option>
+                        Scams
+                    </option>
+
+
+                    <option>
+                        Shopping
+                    </option>
+
+
+                </select>
+
+
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Housing</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure><img src="images/ho1.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Not Go Broke the Next <br>
+                                Time You Move </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho2.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">Why You Should Negotiate Your <br>
+                                Real Estate Agent's Commission in <br> a Hot Market
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho3.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Qualify for an FHA <br>
+                                Mortgage,Even With Student Debt </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Taxes</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho4.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What to Do If You Haven't <br>
+                                Received Your Child Tax Credit </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho5.png" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> This Tool Tells You What You Owe <br>
+                                the IRS Before They Come Looking <br> for It
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho6.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What's a Plus-Up Stimulus <br>
+                                Payment? (And How to Know If <br> You'll Get One) </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Investing </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho7.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Why You Shouldn't Pay All Cash for
+                                <br> a Home, Actually
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho27.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How Much Can You Really Make <br>
+                                Chasing Bank Account Bonuses?
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho28.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The Difference Between Investing <br>
+                                and Speculating (and Why It <br> Matters) </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Recalls </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho29.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Throw Away These Recalled <br>
+                                Sunscreens
+                                That Contain a <br> Carcinogen </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho8.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Has Sara Lee Recalled Your <br>
+                                Dessert for 'Undeclared Peanuts'?
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho9.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Get a Refund On Your <br>
+                                Recalled Tread Peloton </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Budgeting </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho10.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> 7 Ways to Save Money at the <br> Pump
+                                As
+                                Gas Prices Climb </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho11.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">Use the 1% Spending Rule to Save <br>
+                                Money
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho12.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Get Your Family Member's<br>
+                                COVID-Related Funeral Costs <br> Covered </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Shopping</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho13.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How Color Can Affect Your Car’s <br>
+                                Resale Value (and Why Yellow <br> Resells Better Than Black) </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho14.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Why You Shouldn't Wait to Book <br>
+                                Your
+                                Holiday Season Travel
+                            </figcaption>
+                        </figure>
+                    </a>
+
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Scams </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom:30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho15.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Elaborately Fake Dating Sites Are<br>
+                                Scamming You </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho16.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Spot Fake Reviews on <br>
+                                Amazon
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho17.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Tell the Difference <br>
+                                Between a
+                                Spam Email and a Scam </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Credit Cards </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho18.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> You Shouldn't Use Your New <br>
+                                Credit
+                                Card Until You Do These Things </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho19.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">Paying Your Rent With Credit <br>
+                                Might
+                                Actually Make Sense With <br> This New Card
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho20.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What You Need to Know About <br>
+                                Statement
+                                Credits Before <br> Choosing a Credit Card </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Debt</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho21.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> You Just Got More Protections <br>
+                                From
+                                Unscrupulous Lenders Trying <br> to Foreclose on Your Home </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho22.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to File a Borrower Defense <br>
+                                Claim
+                                for Student Loan <br> Forgiveness
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho23.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What’s the Difference Between <br>
+                                FICO
+                                Credit Scores and <br> VantageScore? </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Insurance </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho24.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Qualify for Free <br>
+                                Healthcare If
+                                You'are Unemployed </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho25.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Get Flood Insurance Now Before<br>
+                                Monthly Rates Change in October
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/ho26.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Here's When You Need Insurance<br>
+                                for
+                                Your Collectibles </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col-md-3" style="border-left: 1.7px solid #dedede;">
+                <img class="rightimage" src="images/ddd.jpg">
+                <img class="rightimage" src="images/090.png" style="margin-top: 30px;">
+                <img class="rightimage" src="images/091.jpg" style="margin-top: 30px;">
+                <img class="rightimage" src="images/222.jpg" style="margin-top: 30px;">
+
+            </div>
+
+
+        </div>
+        <br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgba(22,21,22,255);border-bottom:4px solid rgba(22,21,22,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgba(22,21,22,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
+
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- <div align="center" class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="whitehatjr.com" target="blank"><img class="img-responsive sponsored" src="images/spon1.jpg"
+                            style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="whitehatjr.com" target="blank" class="sponsoredheading">
+                            Live online coding classes with Whitehat Jr. Age 6-18 only.</a></p>
+                    <a href="whitehatjr.com" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">whitehatjr.com</a>
+                </div>
+
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.dell.com/en-in" target="blank"> <img class="img-responsive sponsored"
+                            src="images/spon2.jpg" style="height: 200px;width: 250px; margin-top: 25px;"> </a>
+                    <p><a href="https://www.dell.com/en-in" target="blank" class="sponsoredheading">Powerful laptops for
+                            your home or office, now for less.</a></p>
+
+
+                    <a href="https://www.dell.com/en-in" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">Dell</a>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.toppr.com/" target="blank"><img class="img-responsive sponsored"
+                            src="images/spon3.jpg" style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="https://www.toppr.com/" target="blank" class="sponsoredheading">Online Summer Coding
+                            Classes for Kids. Book a Free Class.
+                        </a></p>
+                    <a href="https://www.toppr.com/" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">toppr.com</a>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                        target="blank"><img class="img-responsive sponsored" src="images/spon4.jpg"
+                            style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                            target="blank" class="sponsoredheading">Secure your family from the safety of your home</a>
+                    </p>
+
+                    <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                        target="blank" class="sponsoredlink" style="margin-top:-9px">Max lige Insurance</a>
+                </div>
+            </div>
+
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+        </div> -->
+
+    </div>
+
+
+
+    <div class="footer">
+        <br><br><br>
+<div class="container">
+    <div  class="col-md-3 col-xs-12" >
+        <br>
+        <div class="text-center" style="font-family: 'Orbitron',sans-serif;
+        font-size: 2.5rem;"> <a href="index.html" style="text-decoration: none;color: #fff;">dream blogger </a></div>
+        <div class="sociallist" align="center">
+                
+            <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+            <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+            <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+            <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+         
+         </div>
+    </div>    
+    <div class="col-md-1 col-xs-0"></div>    
+    
+    <div class="col-md-2 col-xs-6" align="center">
+       <div style="color: #7f7f7f;margin-top: 30px;"> Support </div>
+       <br>
+       <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+        
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Advertise</a></li>
+            
+        </ul>
+    </div>    
+    <div class="col-md-2 col-xs-6" align="center">
+      <div style="color: #7f7f7f;margin-top:30px;">dream blogger</div>
+      <br>
+        <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+            <li> <a href="science.html"> Science </a> </li>
+            <li> <a href="health.html"> Health </a></li>
+            <li><a href="money.html"> Money </a> </li>
+            <li><a href="AI.html"> AI </a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-1 col-xs-0"></div>    
+    <div class="col-md-3 col-xs-12">
+        <h1 class="text-center"><a href="index.html" style="text-decoration: none;color: #fff;font-size:2rem;">Start Journey With Us</a></h1>
+        <div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><button id="sendsubmit" type="submit" value="Submit">Sign Up</button> </form> </div></div>    
+<br>
+       
+        <br>
+        </div>
+        <br><br><br><br>
+        <div class="text-center mycopyright" style="font-size: 1.3rem;color: #7f7f7f;" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+        <br><br>
+    </div>
+    
+
+
+
+  
+</body>
+<script>
+  
+    // function open()
+    // document.getElementById("mysearch").style.display="block";
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
+</script>
+
+</html>

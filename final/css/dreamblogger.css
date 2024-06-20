@@ -1,0 +1,146 @@
+.footer{
+    background-color:rgba(22,21,22,255);
+    color: #fff;
+    /* background-color: #181818; */
+
+}
+
+/* a i#facebook {
+    background-color: #3B5998; 
+    border-radius:50%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px 16px;
+    margin-right: 5px;
+}
+
+a i#twitter {
+    background-color: #55ACEE;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+
+
+a i#linkedin {
+    background-color: #0976B4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px 11px;
+}
+
+a i#instagram {
+    background-color: #B7242A;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+a i#pinterest{
+    background-color:rgba(190,2,22,255);
+    border-radius:50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px 11px;
+}
+a i#youtube{background-color: #ff0000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px 11px;
+} */
+
+
+
+#facebook{
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+#instagram{
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+
+}
+#twitter{
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+
+}
+#pinterest{
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+
+}
+
+input#sendinput{
+width: 100%;
+border-top-color: transparent;
+border-left-color: transparent;
+border-right-color: transparent;
+outline: 0;
+background-color: transparent;
+}
+
+
+
+
+.sociallist{margin-top: 15px;}
+
+.mycopyright{
+    color: #a39da3;
+ margin-bottom: 5px;   
+}
+
+
+input#sendinput::placeholder{
+    font-size: 1.3rem;
+}
+
+.footerul a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerul a:hover{
+    color:#c33;
+    transition: 0.4s ease-in-out;
+}
+
+#sendsubmit{
+    background-color: #c33;
+    border: transparent;
+    padding: 10px 60px;
+    color: #fff;
+    font-weight: 400;
+    float: left;
+    margin-top: 17px;
+
+}
+
+@media(max-width:575px){
+    #sendsubmit{
+        width: 100%;
+    }
+}
+

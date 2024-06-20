@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+    <link rel="stylesheet" href="css/tempnav.css">
+    <link rel="stylesheet" href="css/dreamblogger.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/tempsearch.css">
+    <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
+
+    <!-- navbarslider css -->
+    <link rel="stylesheet" href="css/sidebarNavigation.css">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/sidebarNavigation.js"></script>
+
+    <script src="js/search.js"></script>
+
+
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
+     
+
+    
+    
+
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+
+    <div class="font-language">
+
+      
+
+
+        <div class="logobox container">
+            <span class="mylogo">
+                dream blogger
+            </span>
+
+            <a class="mysignin" href="login.html">
+                Login</a>
+
+        </div>
+
+
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+
+                    </button>
+
+
+
+                    <div class="togglename">dream blogger</div>
+
+
+                    <div class="uppersearch pull-right">
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+
+                            <li>
+                                <form action="post">
+
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
+
+                            <li id="firstmenu"><a href="index.html">Home</a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li><a href="gaming.html" target="_blank">Gaming</a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li class="active"><a href="AI.html"> <span> AI </span> </a></li>
+                            <li><a href="about.html">About</a></li>
+
+
+                            <li class="hideit"><a href="signup.html" target="_blank"> <i class="fa fa-user"></i>
+                                SignUp</a></li>
+                        <li class="hideit"><a href="login.html" target="_blank"><i class="fa fa-sign-in"></i>
+                                SignIn</a></li>
+
+<div class="myicons pull-right">
+    <li style="position: absolute;"><a href="https://www.facebook.com/" style="color:#fff"><i id="face" class="fa fa-facebook"></i></a></li>
+    <li style="position: absolute;"><a href="https://www.instagram.com/" style="color: #fff;"> <i id="insta" class="fa fa-instagram"></i></a></li>
+    <li style="position: absolute;"> <a href="https://twitter.com/" style="color: #fff;"><i id="twitt" class="fa fa-twitter"></i> </a> </li>
+</div>    
+
+
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+                                <li></li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+
+
+        <br>
+        <div class="greyimage">
+        </div>
+        <div class="imgset">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-8 col-xs-0"><a
+                            href="https://lifehacker.com/how-to-install-software-on-linux-1822447190"><img
+                                class="img-responsive" src="images/Artificial-Intelligence.jpg" style="margin-top:40px">
+                            <h1 class="blogheading">Guide to Understanding Artificial Intelligence
+
+                            </h1>
+                        </a>
+
+                    </div>
+                    <div class="col-md-1 col-xs-0"></div>
+                    <div class="ad2 col-md-3 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
+                            style="margin-top:40px"></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+
+            <h1>
+                Artificial Intelligence
+            </h1>
+
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+            <div class="col-md-9">
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai1.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> How AI and Machine Learning are Revolutionizing Software
+                            Development</a>
+                        <p class="littleheading">Artificial Intelligence has impacted almost all industries across the
+                            globe. There are several definitions of AI, but the most relevant one is to consider it as
+                            the process of adapting to a new environment. Moreover, it is ideally a collection of
+                            knowledge that is used in almost all scenarios. Therefore, in all the spheres of […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai2.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">HR’s Role in Understanding and Mitigating AI Bias
+                        </a>
+                        <p class="littleheading"> The benefits provided by AI and machine learning are pretty well
+                            established. The technology can help businesses automate processes, gain insight through
+                            data analysis, and engage with customers and employees. And it can help them satisfy
+                            ever-changing market demands, streamline operational costs, and remain competitive in an
+                            increasingly fast-paced digital world. HR’s Role in Understanding […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai3.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">AI Must Play a Role in Making Our Stores Safer
+                        </a>
+                        <p class="littleheading"> Increasing incidents of violence and aggression in retail spaces and
+                            shopping areas demand no shortage of public policy and societal changes. But I believe an
+                            AI-fueled technology shift will need to be part of the response. Technology isn’t a panacea
+                            to all that is going on, of course. It’s far from it. But technology – […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai4.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">How AI is Transforming Affiliate Marketing
+                        </a>
+                        <p class="littleheading"> The spending on marketing automation has been increasing steadily over
+                            the last few years. By 2023, the AI segment may hit the $25 million mark. AI will also
+                            reflect the spending strategy of about 55 percent of marketers. Also, it reflects the
+                            smaller picture of the AI market; it is all set to reach the […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai5.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">
+                            How AI is Spinning the Game of Content Marketing
+                        </a>
+                        <p class="littleheading"> Gone are the days when AI was just extravagant, and marketers used to
+                            collect basic demographic information from customers to create a content marketing strategy.
+                            In the past few years, there has been a massive change in the way that businesses approach
+                            and engage with their customers. Digital media, especially the role of AI, has […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai6.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> Why Good Conversations Matter and How AI Can Help
+                        </a>
+                        <p class="littleheading"> Communication is the cornerstone of society. It’s how we build trust
+                            and lasting relationships personally, professionally, and politically. Good conversation is
+                            more than a perk of good company – it’s the lifeblood of every interaction we have. Most
+                            major technological innovations in the last two hundred years have focused on how to keep
+                            people connected […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+                <!-- 
+            </div> -->
+
+
+
+                <!-- 
+            <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai7.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> With Remote Employees Now Reluctantly Returning to Work, Is Your
+                            Position at Risk of Being Replaced By AI?
+                        </a>
+                        <p class="littleheading"> The COVID-19 pandemic unquestionably shaped the way Americans
+                            performed their work duties, with nearly half of all employees (44%) shifting to remote work
+                            during the shelter-in-place mandate. Not only did this change the way these workers handled
+                            their responsibilities, but it also caused many employers to re-evaluate the necessity of
+                            requiring these staff to check […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai8.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">Artificial Intelligence in Customer Support: What AI Means for
+                            Your Chatbots
+                        </a>
+                        <p class="littleheading"> When we speak about artificial intelligence, most people associate it
+                            with “something smart.” From voice assistants capable of finding the answer to any question
+                            and self-driven cars to cutting-edge fridges that can plan meals and stream your favorite
+                            content – the game is changing, technology is engaging, and AI is getting smarter and
+                            smarter on […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai9.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> How to Explain AI, Machine Learning and Natural Language
+                            Processing
+                        </a>
+                        <p class="littleheading"> Artificial intelligence (AI), machine learning (ML), and natural
+                            language processing (NLP) are three of the most powerful technologies that our modern
+                            society has access to. They can process data in huge quantities in a way that no human being
+                            could hope to achieve, and they will revolutionize the way we look at every aspect of […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai10.jpeg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> 6 Software Intelligence Platforms that Analyze Your Software
+                            Ecosystem
+                        </a>
+                        <p class="littleheading">According to markets and markets, the global business intelligence
+                            market is predicted to expand from $23.1 billion in 2020 to $33.3 billion by 2025, with a
+                            7.6% CAGR. Since the large volume of data is challenging businesses of every size these
+                            days, it’s not a simple task to ensure that business processes are under control. […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai11.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks">Is the Public Ready to Accept Deaths From Self-Driving Car
+                            Accidents?
+                        </a>
+                        <p class="littleheading"> Self-driving cars are set to dramatically reduce accident rates as
+                            well as injuries and deaths from those accidents. But as they roll out and become more
+                            commonplace, they’re probably going to get some people killed. In fact, there are already
+                            early reports of fatalities caused by self-driving cars; tests of Uber’s fully autonomous
+                            vehicles have […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="images/ai12.jpg" style="width: 200px;height: 130px;">
+
+                    </div>
+                    <div class="col-md-9">
+                        <a href="#" class="postlinks"> Is Synthetic Empathy Holding Your AI Back?
+                        </a>
+                        <p class="littleheading"> Human conversation is nuanced. AI is efficient. Getting the right
+                            balance of human and AI in support conversations is tricky — but critical. “Are you a bot?”
+                            I asked. I had a question about a car I was researching. The bot answered my question but
+                            threw in something extra, saying, “It’s a sweet ride.” I […]
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <a href="">
+                    <div class="moreblogs"
+                        style="background-color:#dedede;color:#000;height: 70px;text-align: center;line-height: 3.5;margin-bottom: 30px;">
+                        More Posts</div>
+                </a>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-md-3" style="border-left:1.7px solid #dedede">
+                <img class="rightimage" src="images/222.jpg" >
+                <img class="rightimage" src="images/kj.jpg" style="margin-top: 30px;">
+                <img class="rightimage" src="images/090.png" style="margin-top: 30px;">
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgba(22,21,22,255);border-bottom:4px solid rgba(22,21,22,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgba(22,21,22,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
+
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
+            </div>
+        </div>
+        <br>
+
+
+    </div>
+
+
+    <div class="footer">
+        <br><br><br>
+<div class="container">
+    <div  class="col-md-3 col-xs-12" >
+        <br>
+        <div class="text-center" style="font-family: 'Orbitron',sans-serif;
+        font-size: 2.5rem;"> <a href="index.html" style="text-decoration: none;color: #fff;">dream blogger </a></div>
+        <div class="sociallist" align="center">
+                
+            <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+            <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+            <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+            <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+         
+         </div>
+    </div>    
+    <div class="col-md-1 col-xs-0"></div>    
+    
+    <div class="col-md-2 col-xs-6" align="center">
+       <div style="color: #7f7f7f;margin-top: 30px;"> Support </div>
+       <br>
+       <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+        
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Advertise</a></li>
+            
+        </ul>
+    </div>    
+    <div class="col-md-2 col-xs-6" align="center">
+      <div style="color: #7f7f7f;margin-top:30px;">dream blogger</div>
+      <br>
+        <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+            <li> <a href="science.html"> Science </a> </li>
+            <li> <a href="health.html"> Health </a></li>
+            <li><a href="money.html"> Money </a> </li>
+            <li><a href="AI.html"> AI </a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-1 col-xs-0"></div>    
+    <div class="col-md-3 col-xs-12">
+        <h1 class="text-center"><a href="index.html" style="text-decoration: none;color: #fff;font-size:2rem;">Start Journey With Us</a></h1>
+        <div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><button id="sendsubmit" type="submit" value="Submit">Sign Up</button> </form> </div></div>    
+<br>
+       
+        <br>
+        </div>
+        <br><br><br><br>
+        <div class="text-center mycopyright" style="font-size: 1.3rem;color: #7f7f7f;" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+        <br><br>
+    </div>
+
+
+
+
+
+   
+
+    
+    
+</body>
+<script>
+   
+    // function open()
+    // document.getElementById("mysearch").style.display="block";
+
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
+</script>
+
+</html>

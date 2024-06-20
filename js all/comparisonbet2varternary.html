@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(-45deg, rgb(55, 175, 55), rgb(22, 177, 216));
+            background-size: 1369px 700px;
+        }
+
+        h2 {
+            color: rgb(221, 200, 13);
+        }
+
+        input {
+            border-radius: 20px;
+            height: 25px;
+            width: 170px;
+            background-image: linear-gradient(45deg, rgb(255, 119, 119), rgb(255, 174, 0));
+            font-weight: bold;
+            font-family: cursive;
+            padding-left: 10px;
+        }
+
+        button {
+            border-radius: 20px;
+            background-image: linear-gradient(45deg, rgba(180, 97, 111, 0.897), rgb(61, 194, 235));
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div align="center"><br><br>
+        <h2>Check Bigger Number</h2><br>
+        <input type="number" id="num1" placeholder="Enter First Number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" id="num2" placeholder="Enter Second Number"><br><br><br>
+        <button type="button" value="compare()" onclick="compare()">
+            COMPARE
+        </button><br><br><br>
+        <h2 id="anyone">OUTPUT WILL SHOW HERE</h2>
+    </div>
+
+</body>
+<script>
+    /*ternary operator
+    condition?value1:value2; */
+    function compare() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        document.getElementById("anyone").innerHTML = (a > b) ?
+            a : b;
+    }
+</script>
+
+</html>

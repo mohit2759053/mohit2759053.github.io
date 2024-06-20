@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="css/dreamblogger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- finish -->
+
+
+    <link rel="stylesheet" href="css/homenavstyle.css">
+    <link rel="stylesheet" href="css/searchstyle.css">
+
+    <!-- navbarslider css -->
+    <link rel="stylesheet" href="css/sidebarNavigation.css">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+
+    <script src="js/sidebarNavigation.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
+/* app section is here */
+        *{
+  box-sizing:border-box;
+}
+
+.container1 {
+  padding: 25px;
+  text-align: justify;
+  font-size: 1.7rem;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 2.6rem;
+}
+
+.xlarge-font {
+  font-size: 3.4rem;
+  color:#fff;
+
+}
+
+.button1 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img.myimg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  img.myimg {
+    margin: auto;
+  }
+
+}
+/* appsection finished */
+
+
+        .img:hover{
+            opacity: 0.8;
+        }
+
+        @media (min-width:1024px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              overflow-x: hidden;
+              height:800px;
+              overflow-x:hidden;
+              object-fit:cover;
+          }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x: hidden;
+    
+      }
+      .btndiv{
+        padding:2.1% 8%
+      }
+
+      .homepara{
+padding-top: 370px;
+font-size: 16px;
+      }
+      
+      .homeheading{
+        padding-top: 210px;
+        font-size: 58px;  
+      }
+      .mywebname{
+        font-size: 28px;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 15px;
+      }
+      
+    }
+
+
+
+      @media (min-width:1400px){
+          #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              overflow-x: hidden;
+          }
+          .myvidgroup{max-width: 100%;
+        overflow-x: hidden;
+        }
+      }
+      
+      @media screen and (min-width:768px) and (max-width:1023px){
+        #myvideo{
+            max-width: 100%;
+              min-width: 100%;
+              height:950px;
+              object-fit: cover;             
+              overflow-x:hidden;
+          }
+          .myvidgroup{
+              width: 100%;
+              overflow-x:hidden;
+      }
+      .btndiv{
+        padding:2.8% 12%;
+        
+      }
+
+      .homepara{
+padding-top: 435px;
+font-size: 11px;
+      }
+      
+      .homeheading{
+        padding-top: 330px;
+        
+      }
+      .mywebname{
+        font-size: 24px;
+        line-height: 1.4;
+
+      }
+      .myanchor{
+          padding: 7px 12px;
+          font-size: 16px;
+
+      }
+      
+      .nav.navbar-nav li a{
+        font-size: 16px;
+    }
+
+    }
+
+
+    @media screen and (min-width:600px) and (max-width:768px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              overflow-x:hidden;
+              object-fit: cover;
+              height: 960px;
+
+          }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x:hidden;
+      }
+      .btndiv{
+        padding:2.3% 14%;
+        line-height: 1.7;
+      }
+
+      .homepara{
+padding-top: 435px;
+font-size: 14px;
+padding-left: 6%;
+      }
+      
+      .homeheading{
+        padding-top: 340px;
+        padding-left: 6%;
+      }
+      .mywebname{
+        font-size: 22px;line-height: 1.5;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 15px;
+      }
+      .nav.navbar-nav li a{
+        font-size: 15.5px;
+    }
+    .homepara{
+    white-space: pre-line;
+}
+
+      
+    }
+
+    @media screen and (min-width:450px) and (max-width:600px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              object-fit: cover;
+              height:670px;
+              overflow-x:hidden;
+
+          }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x: hidden;
+      }
+      .btndiv{
+        padding:2.6% 13%;
+        line-height:1.7;
+      }
+
+      .homepara{
+padding-top: 330px;
+font-size: 14px;
+padding-left: 5%;
+white-space:pre-line;
+      }
+      
+      .homeheading{
+        padding-top: 230px;
+        padding-left: 5%;
+      }
+      .mywebname{
+        font-size: 21.5px;
+        line-height: 1.7;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 14px;
+      }
+      .nav.navbar-nav li a{
+        font-size: 15px;
+    }
+
+    
+
+    }
+
+
+    
+
+
+    @media screen and (min-width:370px) and (max-width:450px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              object-fit: cover;
+              height:640px;
+              overflow-x:hidden;
+
+          }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x:hidden;
+      }
+      .btndiv{
+        padding:3.3% 15.5%
+      }
+
+      .homepara{
+        padding-top: 310px;
+        font-size: 15px;
+        padding-left: 4.5%;
+        white-space:pre-line;
+      }
+      
+      .homeheading{
+        padding-top: 220px;
+        font-size: 28px;
+        padding-left: 4.5%;
+      }
+      a.myanchor{
+          font-size: 13px;
+          padding:5px 10px;
+      }
+      .mywebname{
+          line-height: 1.7;
+      }
+      .nav.navbar-nav li a{
+        font-size: 14.5px;
+    }
+ 
+      
+    }
+
+
+    @media screen and (min-width:280.1px) and (max-width:370px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              overflow-x:hidden;
+              object-fit: cover;
+              height:600px;
+
+            }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x:hidden;
+      }
+      .btndiv{
+        padding:3.3% 20%
+      }
+
+      .homepara{
+padding-top: 250px;
+font-size: 12px;
+padding-left: 5%;
+white-space: pre-line;
+      }
+      
+      .homeheading{
+        padding-top: 180px;
+        font-size: 23px;
+        padding-left: 5%;
+      }
+      a.myanchor{
+          font-size: 10px;
+          padding:5px 8px;
+      }
+      
+      .mywebname{
+        font-size: 16.5px;
+        margin-top: 10px;
+      }
+      .nav.navbar-nav li a{
+        font-size: 14px;
+    }
+
+
+    }
+
+    @media (max-width:280px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              overflow-x:hidden;
+              object-fit: cover;
+              height:600px;
+
+            }
+          .myvidgroup{
+              max-width: 100%;
+              overflow-x:hidden;
+      }
+      .btndiv{
+        padding:3.3% 20%
+      }
+
+      .homepara{
+padding-top: 235px;
+font-size: 10px;
+padding-left: 5%;
+white-space: pre-line;
+      }
+      
+      .homeheading{
+        padding-top: 180px;
+        font-size: 16px;
+        padding-left: 5%;
+      }
+      a.myanchor{
+          font-size: 9px;
+          padding:5px 8px;
+      }
+      
+      .mywebname{
+        font-size: 13px;
+        margin-top: 10px;
+      }
+    .navbar-toggle span.icon-bar{
+        width: 14px;
+    }
+    .nav.navbar-nav li a{
+        font-size: 13px;
+    }
+      
+    }
+
+
+
+
+        @media (min-width:1092px){
+            .vdo{
+                width:300px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 50px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:1092px) and (min-width:768px){
+            .vdo{
+                width:300px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 50px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:992px) and (min-width:768px){
+            .vdo{
+                width:230px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 20px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+
+        @media screen and (max-width:768px) and (min-width:600px){
+            .vdo{
+                width:180px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 15px;
+            }
+            .vdopara{
+                font-size: 12.5px;
+            }
+        }
+
+        @media screen and (max-width:600px) and (min-width:500px){
+            .vdo{
+                width:150px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:30px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:500px) and (min-width:400px){
+            .vdo{
+                width:120px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:25px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:400px) and (min-width:300px){
+            .vdo{
+                width:90px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:22px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media (max-width:300px) {
+            .vdo{
+                width:70px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:16px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 12.5px;
+            }
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mybtn:hover {
+            color: #fff;
+            background-color: #505050;
+            transition: 0.6s;
+        }
+
+        #mybtn {
+            color: #505050;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .animated-counter {
+            /* background-image: linear-gradient(45deg, blue, purple); */
+            /* background-color: #2b2b32; */
+            background-color: rgba(22,21,22,255);
+            margin-bottom: 30px;
+            line-height: 2;
+
+
+        }
+
+        @media(min-width:992px) {
+            .animated-counter {
+                height: 230px;
+            }
+
+            .sdsd {
+                padding-top: 30px;
+            }
+        }
+
+        @media(max-width:992px) {
+            .sdsd {
+                padding-top: 30px;
+            }
+        }
+
+        .fa-gift,
+        .fa-history,
+        .fa-users {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        #shiva {
+
+            /* border: 1px dashed #fff; */
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+        }
+
+        .count {
+            /* line-height: 100px; */
+            color: white;
+            /* margin-left:30px; */
+            font-size: 25px;
+        }
+
+
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="font-language">
+
+        <!-- <div class="logobox container">
+            <span class="mylogo">
+                dream blogger
+            </span>
+            <a class="mysignin" href="login.html">
+                Login</a>
+
+
+
+        </div> -->
+<div class="mywebname" style="color: #fff;position:fixed;padding:2% 5%;font-weight:550;font-family:orbitron;z-index: 100;">dream blogger</div>
+<div class="btndiv" style="color: #fff;position: fixed;right:0;font-weight:500;z-index: 100;"><a href="login.html" class="myanchor" target="blank" style="color: #fff;border-radius: 60px;background: #2c71f6;">Login with us</a></div>
+                                                                              
+
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default" style="position: fixed;top: 0;right: 0;background-color: transparent;padding: 1.3% 0%;z-index: 100;">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+
+                    </button>
+
+
+
+
+
+
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+
+                            <li>
+                                
+                            </li>
+
+
+
+                            <li class="active" id="firstmenu"><a href="index.html"><span>Home</span></a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li><a href="gaming.html" target="_blank">Gaming</a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
+
+
+                            <li class="hideit"><a href="signup.html" target="_blank"> <i class="fa fa-user"></i>
+                                SignUp</a></li>
+                        <li class="hideit"><a href="login.html" target="_blank"><i class="fa fa-sign-in"></i>
+                                SignIn</a></li>
+
+
+
+
+                            <li style="display: none;"><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </nav>
+<div style="background:#004995" style="overflow-x: hidden;">
+        <h1 class="homeheading" style="position: absolute;left: 5%;color: #fff;font-family: 'Lato',sans-serif;font-weight: 800;" data-aos="fade-up">Welcome to <br> dream blogger</h1>
+<p class="homepara" style="position: absolute;left: 5%;color: #fff;font-weight: 600;" data-aos="fade-down">we are here to share our exeperience 
+    and knowledge</p>
+<div class="myvidgroup" style="overflow-x: hidden;overflow-y: hidden;">
+<video id="myvideo" autoplay muted loop  style="overflow-x: hidden;overflow-y: hidden;"><source src="images/loop.webm"  type="video/webm" ></video>
+</div>
+
+<div style="background-color: rgba(22,21,22,255);overflow-x: hidden;">
+<br><br>
+    <div class="container" style="overflow-x: hidden;">
+    <div class="row">
+    <div class="col-md-6 col-xs-4" align="center" data-aos="fade-right" style="overflow-x: hidden;"><video class="vdo" autoplay muted loop><source src="images/mail_loop.webm" type="video/webm"></video></div>
+    <div class="col-md-6 col-xs-8" id="vdoheadgrp" data-aos="fade-left" style="overflow-x: hidden;"><div class="vdohead" style="color:#fff;font-weight: 700;">Easily</div>
+        <div class="vdohead" style="color:#fff;font-weight: 700;">send requests</div>
+        <div class="vdohead" style="color:#fff;font-weight: 700;">via e-mail or SMS</div>
+        <p style="color: #fff" class="vdopara"> ...or copy-paste the link
+        </p></div>
+    </div>
+    </div>
+    <br><br>
+    </div>
+    
+
+    
+
+
+</div>
+
+<div class="animated-counter" style="overflow-x:hidden;margin-bottom: 0;">
+    <div class="row">
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva" data-aos="fade-right" style="overflow-x: hidden;">
+                <div> <i class="fa fa-history"></i> </div>
+                <div class="count">800</div>
+                <div style="color: #fff;font-size: 17px;">Working Hours</div>
+            </div>
+        </div>
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva" data-aos="fade-right" style="overflow-x: hidden;">
+                <div> <i class="fa fa-gift"></i>
+                </div>
+                <div class="count">100</div>
+                <div style="color: #fff;font-size: 17px;">Completed Projects</div>
+            </div>
+        </div>
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva" data-aos="fade-left" style="overflow-x: hidden;">
+                <div> <i class="fa fa-users"></i> </div>
+                <div class="count">153</div>
+                <div style="color: #fff;font-size: 17px;">Happy Clients</div>
+            </div>
+        </div>
+
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva" data-aos="fade-left" style="overflow-x: hidden;">
+                <div> <i class="fa fa-gift"></i> </div>
+                <div class="count">40</div>
+                <div style="color: #fff;font-size: 17px;">Awards Recieved</div>
+            </div>
+        </div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+</div>
+
+
+        <div class="appsection" style="background-color: rgba(22,21,22,255);overflow-x: hidden;">
+           
+            
+            <!-- The App Section -->
+            
+            <div class="container1" style="overflow-x: hidden;">
+              <div class="row1">
+                <div class="column-66" data-aos="fade-right" style="overflow-x: hidden;">
+                  <h1 class="xlarge-font"><b>The App</b></h1>
+                  <h1 class="large-font" style="color:mediumseagreen"><b>Why buy it?</b></h1>
+                  
+                  <p style="color: #fff;"><span style="font-size:2.2rem">Not Only for read,Share Your Ideas.</span> You should buy this app because You will get daily quick updates and You can also share Your Thoughts,Ideas and Posts also. </p>
+                  <br>
+                  <button class="button1">Download Application</button>
+                </div>
+                <div class="column-33" data-aos="fade-left" style="overflow-x: hidden;">
+                    <img src="images/appimg.png" width="335" height="471" style="margin-top: 20px;">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Clarity Section -->
+            <div class="container1" style="overflow-x: hidden;">
+              <div class="row1">
+                <div class="column-33" data-aos="fade-right" style="overflow-x: hidden;">
+                  <img class="myimg" src="images/appimg2.png" alt="App" width="335" height="471">
+                </div>
+                <div class="column-66" data-aos="fade-left" style="overflow-x: hidden;">
+                  <h1 class="xlarge-font"><b>Trustable</b></h1>
+                  <h1 class="large-font" style="color:#c33"><b>Trust worthy or not ?</b></h1>
+                  <p style="color: #fff;"> don't worry we are here to share our knowledge , latest news and our exeperience and also you can share your exeperience 
+                    with us and our million of users.   </p>
+                  <button class="button1" style="background-color:#c33">Read More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+            <div style="background-color: #f4f4f4;" >
+                <div class="container">
+                    <h3 style="color: #000;font-weight: 600;">Read Latest Updates</h3>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p style="font-size: 16px;">This Pride Month and year-round, dream blogger celebrates the
+                                contributions.</p>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <a id="mybtn" href="#"
+                                style="border: 2px solid #505050;border-radius: 20px;padding: 5px 10px;font-size: 15.5px;">Browse
+                                the collection</a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;" data-aos="fade-down">
+    
+                        <div style="margin-top: 20px;">
+                            <div class="col-md-4"
+                                style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                                <img src="images/ai7.jpg" style="width: 110px;height: 120px;"> <span
+                                    style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;"> Artificial Intelligence </span>
+                                <a href="#"
+                                    style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;"> Is Artificial-Intelligence can read your Mind ? </a> </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <div class="col-md-4"
+                                style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                                <img src="images/ns.jpg" style="width: 110px;height: 120px;"> <span
+                                    style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;">Gaming</span>
+                                <a href="#"
+                                    style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;"> Are Video games good for the brain ? </a> </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <div class="col-md-4"
+                                style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                                <img src="images/sc27.jpg" style="width: 110px;height: 120px;"> <span
+                                    style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;">Science</span>
+                                <a href="#"
+                                    style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;"> Mars Had Water In The Ancient Past: ...
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div style="background-color: #f4f4f4;">
+        <div class="container" style="overflow-x:hidden;">
+            <h1 class="text-center" data-aos="fade-up">LATEST BLOGS</h1>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img class="img" src="images/home1a.jpg" alt="" style="width:100%">
+                            <div class="caption">
+                                <p>Adobe Premiere Pro now runs natively on M1 Macs</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img class="img" src="images/home2.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Watch Ubisoft reveal a new Tom Clancy game at 2PM ET</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img class="img" src="images/2.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>How to Make Plant-Based Protein Powder </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img class="img" src="images/home4b.jpg" alt="" style="width:100%">
+                            <div class="caption">
+                                <p>Elon Musk booked a trip to space with Virgin Galactic
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img class="img" src="images/ho11.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p> Use the 1% Spending Rule to Save
+                                    Money
+                                     </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img class="img" src="images/europa.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Evidence of Life Could Exist Just Beneath Europa's Icy Surface
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img class="img" src="images/corinne1.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>How to make Mindset & increase the Productivity
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img class="img" src="images/home7.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>How AI is Transforming Affiliate Marketing
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img class="img" src="images/h19.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>How to Build a Strong Inner Foundation for Your Life</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img class="img" src="images/home8.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>7 Ways to Save Money at the Pump As Gas Prices Climb
+                                    
+                                    </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img class="img" src="images/home9gh.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Google is making it easier to manage permissions in Chrome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" style="overflow-x: hidden;">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img class="img" src="images/fitness.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Reddit's Beloved No-Weights Workout Is Famous for a Reason</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+   
+
+    <div class="footer">
+        <br><br><br>
+<div class="container">
+    <div  class="col-md-3 col-xs-12" >
+        <br>
+        <div class="text-center" style="font-family: 'Orbitron',sans-serif;
+        font-size: 2.5rem;"> <a href="index.html" style="text-decoration: none;color: #fff;">dream blogger </a></div>
+        <div class="sociallist" align="center">
+                
+            <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+            <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+            <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+            <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+         
+         </div>
+    </div>    
+    <div class="col-md-1 col-xs-0"></div>    
+    
+    <div class="col-md-2 col-xs-6" align="center">
+       <div style="color: #7f7f7f;margin-top: 30px;"> Support </div>
+       <br>
+       <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+        
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Advertise</a></li>
+            
+        </ul>
+    </div>    
+    <div class="col-md-2 col-xs-6" align="center">
+      <div style="color: #7f7f7f;margin-top:30px;">dream blogger</div>
+      <br>
+        <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+            <li> <a href="science.html"> Science </a> </li>
+            <li> <a href="health.html"> Health </a></li>
+            <li><a href="money.html"> Money </a> </li>
+            <li><a href="AI.html"> AI </a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-1 col-xs-0"></div>    
+    <div class="col-md-3 col-xs-12">
+        <h1 class="text-center"><a href="index.html" style="text-decoration: none;color: #fff;font-size:2rem;">Start Journey With Us</a></h1>
+        <div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><button id="sendsubmit" type="submit" value="Submit">Sign Up</button> </form> </div></div>    
+<br>
+       
+        <br>
+        </div>
+        <br><br><br><br>
+        <div class="text-center mycopyright" style="font-size: 1.3rem;color: #7f7f7f;" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+        <br><br>
+    </div>
+
+</body>
+<script>
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            offset:100,
+            duration: 15000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Sign-up</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-attachment: fixed;
+
+    }
+
+    .content {
+        background-color: #fff;
+        box-shadow: 0 0 5pc 5px rgba(0, 0, 0, 0.05);
+
+    }
+
+
+    .signin-text {
+        font-style: normal;
+        font-weight: 600;
+
+    }
+
+    .form-control {
+        display: block;
+        width: 60%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        border-color: #00ac96;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        padding: 0px;
+        color: #495057;
+        height: auto;
+        border-radius: 0;
+        background-color: #fff;
+        background-clip: padding-box;
+    }
+
+
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #fff;
+        outline: 0;
+        box-shadow: none;
+
+    }
+
+
+    .btn-class {
+        border-color: #00ac96;
+        color: #00ac96;
+
+    }
+
+    .form-control {
+        margin-left: 20px;
+    }
+
+    .btn-class:hover {
+        background-color: #00ac96;
+        color: #fff
+    }
+
+    #check {
+        margin-left: 20px;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+
+    #sign {
+        margin-left: 20px;
+    }
+
+    @media(max-width:768px) {
+        .content {
+            text-align: center;
+        }
+
+        .form-control {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (min-width:724px) and (max-width:768px) {
+        .myrows {
+            margin-left: -25%;
+        }
+    }
+
+    @media screen and (min-width:675px) and (max-width:724px) {
+        .myrows {
+            margin-left: -22%;
+        }
+    }
+
+    @media screen and (min-width:625px) and (max-width:675px) {
+        .myrows {
+            margin-left: -20%;
+        }
+    }
+
+    @media screen and (min-width:575px) and (max-width:625px) {
+        .myrows {
+            margin-left: -17%;
+        }
+    }
+
+    @media screen and (min-width:525px) and (max-width:575px) {
+        .myrows {
+            margin-left: -13.5%;
+        }
+    }
+
+    @media screen and (min-width:575px) and (max-width:525px) {
+        .myrows {
+            margin-left: -10.5%;
+        }
+    }
+</style>
+
+<body style="overflow-x: hidden;">
+
+    <div class="row content" style="margin-top: 30px;overflow-x: hidden;">
+
+        <div class="col-md-6 col-xs-12" align="center" style="overflow-x: hidden;"><br>
+            <h2 class="text-center"> Hello,&nbsp;Friend!</h2><br>
+            <p class="text-center">Enter your personal detail<br>
+                and start journey with us</p>
+            <img src="images/aa.jpg" class="img-responsive">
+
+        </div>
+
+        <div class="col-md-6 col-xs-12 col-sm-12" style="overflow-x: hidden;">
+            <br>
+            <h2 class="signing-text" id="sign"> Sign Up</h2><br>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="fname" placeholder="Username" required maxlength="25">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required maxlength="30">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="pwd" placeholder="Password" required
+                        maxlength="8">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="pwd" placeholder="Repeat Password" required
+                        maxlength="8">
+                </div>
+                <br>
+                <div class="form-group row myrows" style="overflow-x: hidden;">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input type="checkbox" name="checkbox" required maxlength="8" id="check"> &nbsp;
+                        <label><small> I agree all statements in<a href="#"> Terms of
+                                    service</u></a></small></label>
+                    </div>
+                </div>
+
+
+                <div class="row myrows" style="overflow-x: hidden;">
+                    <div class=" col-md-12 col-xs-12 col-sm-12">
+                        <button class="btn btn-class" type="submit">Register
+                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="login.html"><small> I am already member </small></a>
+                    </div>
+                </div>
+                <br><br><br>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

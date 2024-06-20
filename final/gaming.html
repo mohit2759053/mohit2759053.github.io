@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
+    <link rel="stylesheet" href="css/tempnav.css">
+    <link rel="stylesheet" href="css/dreamblogger.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/tempsearch.css">
+    <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
+
+    <!-- navbarslider css -->
+    <link rel="stylesheet" href="css/sidebarNavigation.css">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/sidebarNavigation.js"></script>
+
+    <script src="js/search.js"></script>
+
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
+        .mydata {
+            margin-top: 20px;
+        }
+
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+
+    <div class="font-language">
+
+
+
+        <div class="logobox container">
+            <span class="mylogo">
+                dream blogger
+            </span>
+
+            <a class="mysignin" href="login.html">
+                Login</a>
+
+        </div>
+
+
+
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+
+                    </button>
+
+
+
+                    <div class="togglename">dream blogger</div>
+
+
+                    <div class="uppersearch pull-right">
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+
+                            <li>
+                                <form action="post">
+
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
+
+                            <li id="firstmenu"><a href="index.html">Home</a></li>
+                            <li ><a href="tech.html" target="_blank">Tech</a></li>
+                            <li class="active"><a href="gaming.html" target="_blank"><span>Gaming</span> </a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
+
+
+                            <li class="hideit"><a href="signup.html" target="_blank"> <i class="fa fa-user"></i>
+                                SignUp</a></li>
+                        <li class="hideit"><a href="login.html" target="_blank"><i class="fa fa-sign-in"></i>
+                                SignIn</a></li>
+
+<div class="myicons pull-right">
+    <li style="position: absolute;"><a href="https://www.facebook.com/" style="color:#fff"><i id="face" class="fa fa-facebook"></i></a></li>
+    <li style="position: absolute;"><a href="https://www.instagram.com/" style="color: #fff;"> <i id="insta" class="fa fa-instagram"></i></a></li>
+    <li style="position: absolute;"> <a href="https://twitter.com/" style="color: #fff;"><i id="twitt" class="fa fa-twitter"></i> </a> </li>
+</div>    
+
+
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+                                <li></li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div class="greycontent"> 
+            <div align="center" class="container">
+                <a
+                    href="https://www.intuit.com/in/careers/software-engineering/?cid=dis_eng_reach_in_ttt-fy21-India-lum_aw_gptwbanner|tttproindia_img|728x90_intuit-talent#gptw">
+                    <img src="images/093.png" class="img-responsive" style="margin-top: 25px;">
+                </a>
+    
+            </div>
+<div style="width: 100%;height: 1px;background-color: #2a2b2e;margin-top: 25px;"></div>            
+        </div>
+        <br>
+        <div class="greyimage">
+        </div>
+        <div class="imgset">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-1 col-xs-0"></div> -->
+                    <div class="col-md-9 col-xs-0"><a
+                            href="https://lifehacker.com/how-to-install-software-on-linux-1822447190"><img
+                                class="img-responsive" src="images/pubg.jpg" style="margin-top:40px" width="800px">
+                            <h1 class="blogheading">'PUBG Mobile' update adds a self-driving Tesla Model Y
+                            </h1>
+                        </a>
+
+                        <p class="mydata" style="margin-top: 10px;margin-bottom: 40px;"><img src="images/unknown.png"
+                                width="25px" height="23px"> By Mohit Mali,
+                            07.09.2021</p>
+                    </div>
+
+                    <div class="ad2 col-md-3 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
+                            style="margin-top:40px;width: 300px;height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h1>
+                The Latest in Gaming
+            </h1>
+
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+            <div class="col-md-9">
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+
+                        <img class="img-responsive" src="images/111.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks"> 'The Witcher 3: Wild Hunt' is getting free DLC inspired by the
+                            Netflix series</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/pubg.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks"> 'PUBG Mobile' update adds a self-driving Tesla Model Y</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 22
+                            hours ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/kungfu.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Age-based kung fu game 'Sifu' gets pushed to early 2022</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 23
+                            hours ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ds.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">'Death Stranding Director's Cut' will hit PS5 September 24th</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/moss.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">
+                            'Moss: Book II' continues the story of Quill on PSVR</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ns.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks"> Nintendo’s OLED Switch isn’t the Switch Pro, and that’s okay</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+                <!-- 
+            </div> -->
+
+
+
+                <!-- 
+            <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/bungi.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Bungie will reveal what's next for 'Destiny 2' on August 24th</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/amazon-free-source.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Amazon open-sources its in-house game engine</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ab.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Assassin's Creed could become an online service game</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/testdrive.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">'Test Drive Unlimited Solar Crown' arrives September 22nd,
+                            2022</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-left">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/sony.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Sony's next State of Play will focus on 'Deathloop'</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <!-- </div> -->
+
+
+
+
+                <!-- <div class="col-md-9"> -->
+                <div class="row" data-aos="fade-up-right">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/atari.jpg" style="height: 180px;">
+
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="postlinks">Atari steps back from mobile games to focus on 'premium' PC and
+                            console titles</a>
+                        <p class="littleheading">The downloadable content will come included with the game's free
+                            next-gen update.</p>
+
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day
+                            ago</p>
+
+                    </div>
+
+                </div>
+                <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+                <a href="">
+                    <div class="moreblogs"
+                        style="background-color:#dedede;color:#000;height: 70px;text-align: center;line-height: 3.5;margin-bottom: 30px;">
+                        More Stories</div>
+                </a>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-md-3" style="border-left: 1.7px solid #dedede;">
+                <img class="rightimage" src="images/ddd.jpg" />
+                <a href="#">   <img class="rightimage" src="images/090.png" style="margin-top: 30px;"> </a>
+
+            <a href="#">   <img class="rightimage" src="images/091.jpg" style="margin-top: 30px;"> </a>
+
+            <a href="#">   <img class="rightimage" src="images/jkl.jpg" style="margin-top: 30px;"> </a>
+
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgba(22,21,22,255);border-bottom:4px solid rgba(22,21,22,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgba(22,21,22,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
+
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+   
+    <div class="footer">
+        <br><br><br>
+<div class="container">
+    <div  class="col-md-3 col-xs-12" >
+        <br>
+        <div class="text-center" style="font-family: 'Orbitron',sans-serif;
+        font-size: 2.5rem;"> <a href="index.html" style="text-decoration: none;color: #fff;">dream blogger </a></div>
+        <div class="sociallist" align="center">
+                
+            <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+            <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+            <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+            <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+         
+         </div>
+    </div>    
+    <div class="col-md-1 col-xs-0"></div>    
+    
+    <div class="col-md-2 col-xs-6" align="center">
+       <div style="color: #7f7f7f;margin-top: 30px;"> Support </div>
+       <br>
+       <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+        
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Advertise</a></li>
+            
+        </ul>
+    </div>    
+    <div class="col-md-2 col-xs-6" align="center">
+      <div style="color: #7f7f7f;margin-top:30px;">dream blogger</div>
+      <br>
+        <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+            <li> <a href="science.html"> Science </a> </li>
+            <li> <a href="health.html"> Health </a></li>
+            <li><a href="money.html"> Money </a> </li>
+            <li><a href="AI.html"> AI </a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-1 col-xs-0"></div>    
+    <div class="col-md-3 col-xs-12">
+        <h1 class="text-center"><a href="index.html" style="text-decoration: none;color: #fff;font-size:2rem;">Start Journey With Us</a></h1>
+        <div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><button id="sendsubmit" type="submit" value="Submit">Sign Up</button> </form> </div></div>    
+<br>
+       
+        <br>
+        </div>
+        <br><br><br><br>
+        <div class="text-center mycopyright" style="font-size: 1.3rem;color: #7f7f7f;" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+        <br><br>
+    </div>
+
+
+   
+    
+</body>
+<script>
+    var loader = document.getElementById("loader");
+
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+
+
+    })
+
+    // function open()
+    // document.getElementById("mysearch").style.display="block";
+
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
+
+</script>
+
+</html>

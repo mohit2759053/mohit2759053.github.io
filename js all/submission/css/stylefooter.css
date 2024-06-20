@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+        
+.copyright-menu a{
+    color: #9b9b9b;
+    font-size: 15px;
+}
+.copyright-menu a:hover{
+    color: #007bff;
+    text-decoration: none;
+}
+.heading a
+{
+    font-family: 'Raleway',sans-serif;
+    font-size:20px;
+    color: #fff;
+    text-decoration: none;            
+    
+    
+}
+
+.footer {
+    background-color: #000;
+    /* background-color: #151414; */
+    padding: 30px 0 0 0;
+}
+
+.foot> {
+    color: #9b9b9b;
+}
+
+.footer>a {
+    text-decoration: none;
+}
+
+.heading4 {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+#head4 {
+    margin-left: 40px;
+
+}
+
+
+.emailsend {
+    padding: 14px 18px;
+    border-radius: 50px;
+    /* background: #2E2E2E; */
+    background-color: #080808;
+    /* border: 1px solid #2E2E2E; */
+    border: 1px solid #080808;
+    height: 46px;
+    width: 100%;
+    line-height: px;
+    outline: 0;
+    color: #fff;
+
+}
+.emailsend:focus{
+    box-shadow: 0 0 10px #007bff;
+}
+
+.emailsend::placeholder {
+    padding-left: 10px;
+    font-size: 17px;
+    /* color: #fff; */
+}
+.footer-info-text :hover{
+    color: #fff;
+    transition: 0.9s;
+}
+.footer-info-text a{
+    color: #9b9b9b;
+    text-decoration: none;
+}
+button.sendme {
+    position: absolute;
+    right: 15px;
+    padding: 12px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+}
+
+.parahover:hover{
+    color: #fff;
+    transition: 0.9s;
+}
+
+.copyright-menu li {
+    display: inline-block;
+    padding-left: 20px;
+    
+    
+
+}
+
+.copyright {
+    /* background-color: #010211; */
+    background-color: #080808;
+    margin-top: 55px;
+    padding: 28px 0px;
+    
+}
+
+.copyright-menu ul {
+    text-align: right;
+    margin: 0;
+    
+}
+
+.contact-us {
+    margin-bottom: 30px;
+    padding-left: 35px;
+}
+
+.contact-us .contact-info {
+    margin-left: 40px;
+}
+
+.contact-us.contact-us-last {
+    margin-left: -35px;
+}
+
+.contact-icon i {
+    font-size: 24px;
+    top: 50px;
+    color: #007bff;
+}
+
+.glyphicon-phone {
+    margin-left: 0px;
+}
+
+.footer-box-info {
+    /* position: ; */
+    margin-top:-29px ;
+    background:#080808 ;
+    padding: 40px;
+    height: 323px;
+    /* z-index:2 ; */
+}
+
+.footer-social-link li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.para p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: px;
+    padding-top: 30px;
+}
+.para2{
+    color: #9b9b9b;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 31px;
+    font-size: 16px;
+    word-spacing: 0.5px;
+    letter-spacing: 0.5px;
+}
+.para2:hover{
+    color: #fff;
+    transition: .9s;
+}
+
+a i.fa-facebook {
+    background-color: #3B5998;
+}
+
+a i.fa-twitter {
+    background-color: #55ACEE;
+}
+
+a i.fa-google-plus {
+    background-color: #DD4B39;
+}
+
+a i.fa-linkedin {
+    background-color: #0976B4;
+}
+
+a i.fa-instagram {
+    background-color: #B7242A;
+}
+
+a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.footer-social-link ul {
+    padding: 0;
+    margin: 0;
+}
+.firsth{
+    font-size: 20px;
+}
+.secondh{
+    font-size: 26px;
+}
+.thirdh{
+    font-size: 26px;
+}
+.footer-widget ul {
+    width: 50%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 39px;
+    line-height: 21px;
+    font-size: 17px;
+}
+
+.footer-widget li {
+    margin-bottom: 18px;
+}
+
+.footer-widget p {
+    margin-bottom: 27px;
+}
+
+.footer-widget a {
+    color: #9b9b9b;
+}
+
+.footer-widget a:hover {
+    /* color: #007bff; */
+    color: #fff;
+    text-decoration: none;
+    transition: 0.9s;
+}
+.contact-info a:hover{
+    color:#fff;
+    transition: 0.9s;
+    text-decoration: none;
+}
+.contact-info a{
+    color: #9b9b9b;
+}

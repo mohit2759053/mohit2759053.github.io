@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p color change by class</title>
+</head>
+<body>
+    <p class="same">This is first paragraph </p>
+    <p class="same">This is second paragraph</p>
+    <p class="same">This is third paragraph</p>
+    <p class="same">This is fourth paragraph</p>
+    <script>
+       var a= document.getElementsByClassName("same");
+       for(i=0; i<a.length; i++){
+           console.log(a[i].style.color="blue"); // here you can use of console.log and without it program will have never any effect
+       }
+    </script>
+</body>
+</html>

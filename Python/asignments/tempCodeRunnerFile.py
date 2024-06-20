@@ -1,0 +1,1 @@
+lements in given list is :", math.prod(lst))

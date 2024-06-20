@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pargraph visibility</on-off></title>
+</head>
+<body>
+    <p id="hideandseek">
+        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an
+          unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+    </p>
+    <button type="button" onclick="hide()">HIDE</button>
+    <button type="button" onclick="show()">SHOW</button>
+
+    <script>
+        function hide(){
+            document.getElementById("hideandseek").style.visibility="hidden";
+        }
+        function show(){
+            document.getElementById("hideandseek").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

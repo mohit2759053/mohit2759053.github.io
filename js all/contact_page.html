@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+        body {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .btn {
+            color: #fff;
+            width: 50%;
+            background-color: #000;
+
+        }
+
+
+
+        a.form-control {
+            /* color: #00acee; */
+            color: #fff;
+            height: 40px;
+            text-decoration: none;
+            padding-top: 8px;
+            font-weight: bold;
+        }
+
+        button.form-control {
+            margin-top: 10px;
+            background-color: rgb(4, 127, 250);
+            color: #fff;
+            height: 40px;
+        }
+
+        .input-icon {
+            margin-top: 11px;
+            line-height: 40px;
+            color: #fff;
+            position: absolute;
+            background-color: dodgerblue;
+            font-size: 15px;
+            width: 42px;
+            height: 40px;
+            border-radius: 5px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-control::placeholder {
+            letter-spacing: 0.5px;
+            padding-left: 40px;
+        }
+
+        input.form-control {
+            margin-top: 11px;
+            height: 40px;
+        }
+
+        .s1 {
+            position: relative;
+            z-index: 0;
+            font-weight: 550;
+
+        }
+
+        .s2 {
+            position: absolute;
+            background-color: gray;
+            height: 1px;
+            width: 358px;
+            z-index: 1;
+            margin-top: 10px;
+            margin-left: -190px;
+        }
+
+        .cutor {
+            padding-top: 7px;
+            padding-bottom: px;
+        }
+
+        a.google {
+            color: #000;
+            background-color: #fff;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h3 class="text-center"> Create Account</h3>
+        <h5 class="text-center">Get started with your free account </h5>
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+            <div class="col-md-4 col-xs-12">
+                <a href="https://accounts.google.com/" class="form-control google"><img src="img/google.png" width="20px"> Continue with Google
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+            <div class="col-md-4 col-xs-12">
+                <a href="https://twitter.com/login" class="form-control" style="margin-top: 5px;background-color: #00acee;"><i
+                        class="fa fa-twitter"></i> Continue with Twitter </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.facebook.com/login/web/" class="form-control" style="margin-top: 5px;background-color: #3b5998;"><i
+                        class="fa fa-facebook"> </i> Continue with Facebook </a>
+            </div>
+        </div>
+
+
+        <div class="cutor">
+            <span class="s1">OR</span>
+            <span class="s2"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+            <div class="col-md-4 col-xs-12">
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                </div><input class="form-control" type="text" placeholder="Username" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="input-icon">
+                    <i class="fa fa-send"></i>
+                </div><input class="form-control" type="email" placeholder="Email" required>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+
+            <div class="col-md-4 col-xs-12">
+
+                <div class="input-icon">
+                    <i class="fa fa-key"></i>
+                </div><input class="form-control" type="password" placeholder="Password" required>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="input-icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <input class="form-control" type="number" placeholder="Phone" required>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="input-icon">
+                    <i class="fas fa-city"></i>
+                </div> <input class="form-control" type="text" placeholder="City" required>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-0"></div>
+            <div class="col-md-4 col-xs-12">
+                <button type="submit" class="form-control text-center "> REGISTER</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

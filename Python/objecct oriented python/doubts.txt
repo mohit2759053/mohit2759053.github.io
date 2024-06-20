@@ -1,0 +1,99 @@
+OOP in python -
+
+In Python, object-oriented Programming (OOPs) is a programming paradigm(means => example) that uses objects and classes in 
+programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc.
+in the programming. The main concept of OOPs is to bind the data and the functions "that work on that 
+together as a single unit so that no other part of the code can access this data."(us par kaam
+ek saath ek unit ke jaise taaki code ka koee any part iss data tak nahin pahunch sake) 
+
+
+Main Concepts of Object-Oriented Programming (OOPs): 
+
+1.Class
+2.Objects
+3.Polymorphism
+4.Encapsulation
+5.Inheritance
+
+
+Class ::: A class is a blueprint for the object.
+We can think of class as a sketch of a parrot with labels(labels means => line draw karke uske body part show karna :like- eye , hair,legs etc.). It contains all the details about the 
+name, colors, size etc. Based on these descriptions, we can study about the parrot. Here, a parrot is an object.
+
+
+The example for class of parrot can be :
+
+class parrot:
+    pass
+
+Here, we use the class keyword to define an empty class Parrot. 
+From class, we construct instances.
+An instance is a specific object created from a particular class.
+
+Object ::: An object (instance) is an instantiation of a class. When class is defined, only the description for
+ the object is defined. Therefore, no memory or storage is allocated.
+
+The example for object of parrot class can be:
+
+obj = Parrot()
+Here, obj is an object of class Parrot.
+
+Suppose we have details of parrots. Now, we are going to show how to build the class and objects of parrots.
+
+Example 1: Creating Class and Object in Python
+class Parrot:
+
+    # class attribute
+    species = "bird"
+
+    # instance attribute
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# instantiate the Parrot class
+blu = Parrot("Blu", 10)
+woo = Parrot("Woo", 15)
+
+# access the class attributes
+print("Blu is a {}".format(blu.__class__.species))
+print("Woo is also a {}".format(woo.__class__.species))
+
+# access the instance attributes
+print("{} is {} years old".format( blu.name, blu.age))
+print("{} is {} years old".format( woo.name, woo.age))
+Output
+
+Blu is a bird
+Woo is also a bird
+Blu is 10 years old
+Woo is 15 years old
+In the above program, we created a class with the name Parrot. Then, we define attributes. 
+The attributes are a characteristic of an object.
+
+These attributes are defined inside the __init__ method of the class. It is the initializer
+method that is first run as soon as the object is created.
+
+Then, we create instances of the Parrot class. Here, blu and woo are references (value) to
+our new objects.
+
+We can access the class attribute using __class__.species. Class attributes are the same for
+all instances of a class. Similarly, we access the instance attributes using blu.name and 
+blu.age. However, instance attributes are different for every instance of a class.
+
+
+
+
+
+
+
+An object (instance) is an instantiation of a class. When class is defined, only the description 
+for the object is defined. Therefore, no memory or storage is allocated.
+
+
+The child class inherits the functions of parent class.
+
+
+Additionally, we use the super() function inside the __init__() method. This allows us to run
+ the __init__() method of the parent class inside the child class.
+

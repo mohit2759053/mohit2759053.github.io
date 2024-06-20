@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="css/tempnav.css">
+    <link rel="stylesheet" href="css/dreamblogger.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/tempsearch.css">
+    <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
+
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
+    <!-- navbarslider css -->
+    <link rel="stylesheet" href="css/sidebarNavigation.css">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/sidebarNavigation.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
+        @media(max-width:988px) {
+            #hidescience {
+                display: none;
+            }
+        }
+
+        @media (min-width:768px) {
+            .viewall {
+                padding-right: 6.1%;
+
+            }
+        }
+
+        @media (min-width:991px) {
+            .viewall {
+                padding-right: 29.8%;
+
+            }
+        }
+
+        .scrolldiv {
+            display: grid;
+            grid-template-columns: repeat(3, [col] 1fr);
+            gap: 1rem;
+            overflow: auto;
+            white-space: nowrap;
+            grid-auto-flow: column;
+        }
+
+
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+
+    <div class="font-language">
+
+        <div id="loader">
+
+        </div>
+
+
+        <div class="logobox container">
+            <span class="mylogo">
+                dream blogger
+            </span>
+
+            <a class="mysignin" href="login.html">
+                Login</a>
+
+        </div>
+
+
+
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+                        <span class="icon-bar" style="background-color: #fff;"></span>
+
+                    </button>
+
+
+
+                    <div class="togglename">dream blogger</div>
+
+
+                    <div class="uppersearch pull-right">
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+
+                            <li>
+                                <form action="post">
+
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
+
+                            <li id="firstmenu"><a href="index.html">Home</a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li><a href="gaming.html" target="_blank">Gaming</a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li class="active"><a href="science.html" target="_blank"><span>Science</span></a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
+
+
+                            <li class="hideit"><a href="signup.html" target="_blank"> <i class="fa fa-user"></i>
+                                SignUp</a></li>
+                        <li class="hideit"><a href="login.html" target="_blank"><i class="fa fa-sign-in"></i>
+                                SignIn</a></li>
+
+<div class="myicons pull-right">
+    <li style="position: absolute;"><a href="https://www.facebook.com/" style="color:#fff"><i id="face" class="fa fa-facebook"></i></a></li>
+    <li style="position: absolute;"><a href="https://www.instagram.com/" style="color: #fff;"> <i id="insta" class="fa fa-instagram"></i></a></li>
+    <li style="position: absolute;"> <a href="https://twitter.com/" style="color: #fff;"><i id="twitt" class="fa fa-twitter"></i> </a> </li>
+</div>    
+
+
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+                                <li></li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+
+
+      
+
+        <div class="container">
+
+            <h1 class="text-center" style="color: rgb(0, 117, 178);font-size: 40px;">
+                Science
+            </h1>
+            <p class="text-center">News about space, physics, archaeology, animals, health, and more</p>
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+            <div class="row">
+                <div class="col-md-9" style="border-right: 2px solid #dedede;">
+                    <a href="#">
+                        <figure> <img src="images/europa.jpg" class="img-responsive" style="margin-top: 15px;">
+                            <figcaption
+                                style="margin-top:25px;font-size: 30px;font-weight: 700;text-align: center;color: #000;">
+                                Evidence of Life Could Exist Just Beneath Europa's Icy Surface </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="col-md-3" id="hidescience">
+                    <a href="#">
+                        <figure> <img src="images/q.jpg" class="img-responsive" style="margin-top: 15px;" width="300px">
+                            <figcaption style="font-size: 17px;color:#000;font-weight: 800;">Anti-Vaxxer Tucker Carlson
+                                Says He's Not Against Vaccines</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure> <img src="images/spacecraft.jpg" class="img-responsive" style="margin-top: 15px;"
+                                width="300px">
+                            <figcaption style="font-size: 17px;color:#000;font-weight: 800;"> NASA'S Lucy Spacecraft
+                                Will Carry a Time Capsule for Future Earthlings </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+
+            <div class="col-md-9" style="border-right:2px solid #dedede">
+                <select
+                    style="font-size: 15px;width: 100%;height: 37px;outline: 0;border:1px solid #dedede;border-radius: 4px;">
+
+                    <option>
+                        All Sections
+                    </option>
+
+                    <option>
+                        Health
+                    </option>
+
+                    <option>
+                        Genetics
+                    </option>
+
+                    <option>
+                        Space
+                    </option>
+
+                    <option>
+                        Animals
+                    </option>
+
+                    <option>
+                        Earth Science
+                    </option>
+
+                    <option>
+                        Archaeology
+                    </option>
+
+                    <option>
+                        Physics
+                    </option>
+
+                    <option>
+                        Artificial Intelligencce
+                    </option>
+
+                    <option>
+                        Conservation
+                    </option>
+
+
+                    <option>
+                        Extreme Field Work
+                    </option>
+
+
+
+
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Health</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc1.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Journal Retracts Flawed Study <br>
+                                That Claimed to Show Face Masks <br> Harm Kids </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc2.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Some Doctors Say They Won't Give <br>
+                                Their Patients a Contentious New <br> Alzheimer's Drug </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc3.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Study: Alcohol Linked to More <br>
+                                Than 700,000 Cancer Cases <br> Worldwide Every Year </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Genetics</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc4.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Cannabis Genomes Suggest the <br>
+                                Plant Originated in in East Asia</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc5.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Genetically Modified Babies Are <br>
+                                Still a Bad Idea, WHO Committee <br> Concludes </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc6.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Revised Family Tree Identifies 14
+                                <br> Living Relatives of Leonardo Da <br> Vinci
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Space</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc7.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Hubble Space Telescope Is Back
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc8.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> $28 Million Ticket-Holder for Jeff
+                                <br> Bezos’s Flight to Space Suddenly <br> Has Something Better to Do
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc9.png" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Enormous Inbound Comet Appears <br>
+                                as ‘Beautiful Little Fuzzy Dot’ in <br> New Image </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Animals</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc10.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Two Bull Sharks Swam Up the <br>
+                                Mississippi River All the Way to St. <br> Louis </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc11.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Would Your Dog Give You Treats If
+                                <br> He Could?
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc12.png" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Watch Thousands of Fish Get <br>
+                                Dropped From a Plane Into a Utah <br> Lake </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Earth Science </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc13.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Massive Tsunami From Dino-Killing
+                                <br> Asteroid Carved ‘Megaripples’ Into <br> the Ocean Floor
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc14.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Life Under Antarctiva Is Surviving
+                                <br> on Pulverized Rock
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <!-- <a href="#" style="color: #000;">
+                        <figure> <img src="images/111.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">  </figcaption>
+                        </figure>
+                    </a> -->
+
+                </div>
+</div>
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+      
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Archaeology</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc15.png" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> 51,000-Year-Old Bone Carving <br>
+                                Suggest Neanderthals Were True <br> Artists </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc16.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> New Expedition Will Inspect <br>
+                                Deteriorating Wreck of the Titanic
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc17.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> This Carved Snake May Have Been <br>
+                                the Staff of a Stone Age Shaman </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Physics </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc18.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Fool's Gold Is Hiding 'Invisible'
+                                <br> Real Gold,Scientists Find
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc19.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Young Physicists Are Shaping the <br>
+                                Next Generation of Discoveries
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc20.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Mirrors That Detect Ripples in <br>
+                                Space-Time Were Frozen to Near <br> Absolute Zero </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Artificial Intelligencce </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <video src="images/sc21.mp4" width="240px"></video>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How and Artificial Superintelligence
+                                <br> Might Actually Destroy Humanity
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc22.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How AI Could Upgrade Brain <br>
+                                Stimulation Therapies </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc23.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Artificial Human Genomes Could <br>
+                                Help Overcome Research Privacy <br> Concerns </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-left">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Conservation </span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc24.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The UK's New Animal Welfare Plan <br>
+                                Is Both Very Good and Not Nearly <br> Enough </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc25.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Dogs and Dingoes Are Not Boning
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc26.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> This 'Map of Life' Shows Where <br>
+                                Undiscovered Species May Be <br> Lurking </figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+</div>
+
+
+                <select name="All Sections" style="visibility: hidden;">
+                    <option>
+
+                    </option>
+                </select>
+                <br><br>
+                <div data-aos="fade-up-right">
+                <div class="container">
+
+                    <span style="line-height: 0;font-size: 27px;font-weight: 600;">Extreme Field Work</span>
+                    <a class="viewall" href="#" style="display:inline;float:right;color:#008CBA">VIEW ALL</a>
+                </div>
+                <div style="border-bottom: solid 1.5px #dedede;width: 100%;margin-bottom: 30px;"></div>
+                <div class="scrolldiv col-xs-12 col-md-12">
+
+                    <a href="#" style="color: #000;">
+                        <figure> <img src="images/sc27.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Lava Tube 'Astronauts' Are <br>
+                                Preparing for Mars on a Hawaiian <br> Volcano </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" style="color: #000;">
+                        <figure> <video src="images/sc28.mp4" width="240px"></video>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Scientists Cook Hot Dogs in Lava <br>
+                                From Iceland's Erupting Volcano
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <!-- <a href="#" style="color: #000;">
+                        <figure> <img src="images/111.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;">
+                        </figure>
+                    </a> -->
+
+                </div>
+</div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col-md-3" style="border-left: 1.7px solid #dedede;">
+                <img class="rightimage" src="images/ddd.jpg">
+                <img class="rightimage" src="images/090.png" style="margin-top: 30px;">
+                <img class="rightimage" src="images/091.jpg" style="margin-top: 30px;">
+                <img class="rightimage" src="images/222.jpg" style="margin-top: 30px;">
+            </div>
+
+
+        </div>
+        <br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgba(22,21,22,255);border-bottom:4px solid rgba(22,21,22,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgba(22,21,22,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
+
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- <div align="center" class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="whitehatjr.com" target="blank"><img class="img-responsive sponsored" src="images/spon1.jpg"
+                            style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="whitehatjr.com" target="blank" class="sponsoredheading">
+                            Live online coding classes with Whitehat Jr. Age 6-18 only.</a></p>
+                    <a href="whitehatjr.com" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">whitehatjr.com</a>
+                </div>
+
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.dell.com/en-in" target="blank"> <img class="img-responsive sponsored"
+                            src="images/spon2.jpg" style="height: 200px;width: 250px; margin-top: 25px;"> </a>
+                    <p><a href="https://www.dell.com/en-in" target="blank" class="sponsoredheading">Powerful laptops for
+                            your home or office, now for less.</a></p>
+
+
+                    <a href="https://www.dell.com/en-in" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">Dell</a>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.toppr.com/" target="blank"><img class="img-responsive sponsored"
+                            src="images/spon3.jpg" style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="https://www.toppr.com/" target="blank" class="sponsoredheading">Online Summer Coding
+                            Classes for Kids. Book a Free Class.
+                        </a></p>
+                    <a href="https://www.toppr.com/" target="blank" class="sponsoredlink"
+                        style="margin-top:-9px">toppr.com</a>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                        target="blank"><img class="img-responsive sponsored" src="images/spon4.jpg"
+                            style="height: 200px;width: 250px; margin-top: 25px;"></a>
+                    <p><a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                            target="blank" class="sponsoredheading">Secure your family from the safety of your home</a>
+                    </p>
+
+                    <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge"
+                        target="blank" class="sponsoredlink" style="margin-top:-9px">Max lige Insurance</a>
+                </div>
+            </div>
+
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+        </div> -->
+
+    </div>
+
+
+
+    <div class="footer">
+        <br><br><br>
+<div class="container">
+    <div  class="col-md-3 col-xs-12" >
+        <br>
+        <div class="text-center" style="font-family: 'Orbitron',sans-serif;
+        font-size: 2.5rem;"> <a href="index.html" style="text-decoration: none;color: #fff;">dream blogger </a></div>
+        <div class="sociallist" align="center">
+                
+            <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+            <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+            <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+            <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+         
+         </div>
+    </div>    
+    <div class="col-md-1 col-xs-0"></div>    
+    
+    <div class="col-md-2 col-xs-6" align="center">
+       <div style="color: #7f7f7f;margin-top: 30px;"> Support </div>
+       <br>
+       <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+        
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Advertise</a></li>
+            
+        </ul>
+    </div>    
+    <div class="col-md-2 col-xs-6" align="center">
+      <div style="color: #7f7f7f;margin-top:30px;">dream blogger</div>
+      <br>
+        <ul class="footerul" type="none" style="padding: 0;line-height: 2.5;">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+            <li> <a href="science.html"> Science </a> </li>
+            <li> <a href="health.html"> Health </a></li>
+            <li><a href="money.html"> Money </a> </li>
+            <li><a href="AI.html"> AI </a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-1 col-xs-0"></div>    
+    <div class="col-md-3 col-xs-12">
+        <h1 class="text-center"><a href="index.html" style="text-decoration: none;color: #fff;font-size:2rem;">Start Journey With Us</a></h1>
+        <div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><button id="sendsubmit" type="submit" value="Submit">Sign Up</button> </form> </div></div>    
+<br>
+       
+        <br>
+        </div>
+        <br><br><br><br>
+        <div class="text-center mycopyright" style="font-size: 1.3rem;color: #7f7f7f;" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+        <br><br>
+    </div>
+
+   
+
+
+
+   
+    
+</body>
+<script>
+    
+
+    // function open()
+    // document.getElementById("mysearch").style.display="block";
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
+</script>
+
+</html>

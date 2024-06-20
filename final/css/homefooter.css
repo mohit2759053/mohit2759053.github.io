@@ -1,0 +1,139 @@
+.footer{
+    background-color:rgba(22,21,22,255);
+    color: #fff;
+}
+
+a i#facebook {
+    background-color: #3B5998; 
+    border-radius:50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 15px 21px;
+}
+
+a i#twitter {
+    background-color: #55ACEE;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 14px 18px;
+}
+
+
+
+a i#linkedin {
+    background-color: #0976B4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 16px 18px;
+}
+
+a i#instagram {
+    background-color: #B7242A;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 16px 18px;
+}
+
+a i#pinterest{
+    background-color:rgba(190,2,22,255);
+    border-radius:50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 14px 18px;
+}
+a i#youtube{background-color: #ff0000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    padding: 14px 18px;
+}
+
+
+
+#facebook{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#instagram{
+    font-size: 20px;
+    padding-right: 20px;
+}
+#twitter{
+    font-size: 20px;
+    padding-right: 20px;
+}
+#pinterest{
+    font-size: 20px;
+    padding-right: 20px;
+}
+#linkedin{
+    font-size: 20px;
+    padding-right: 20px;
+}
+#youtube{
+    font-size: 20px;
+
+}
+
+.sendemail{margin-top: 30px;
+    
+}
+
+input#sendinput{
+    outline: 0;
+    color: #000;
+    border-radius: 40px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border: transparent;
+    height: 37px;
+    width: 220px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #000;
+    font-weight: 500;
+    
+}
+input#sendsubmit{
+    background-color: #0063b7;
+    border:transparent;
+    border-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 37px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px 11px;
+    
+}
+
+input[type="email"]#sendinput::placeholder{
+    font-size: 16px;
+    padding-left: 10px;
+    color:rgba(22,21,22,255);
+    font-weight: 600;
+
+}
+
+.sociallist{margin-top: 65px;margin-bottom: 20px;word-spacing: 4px;}
+
+.mycopyright{
+    color: #a39da3;
+ margin-bottom: 5px;   
+}
